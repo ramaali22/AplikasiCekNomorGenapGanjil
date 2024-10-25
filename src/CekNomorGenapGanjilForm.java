@@ -37,6 +37,7 @@ public class CekNomorGenapGanjilForm extends javax.swing.JFrame {
         jLabelHasil = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Aplikasi Cek Nomor Genap Ganjil");
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 51));
 
