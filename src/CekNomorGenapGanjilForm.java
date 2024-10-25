@@ -87,8 +87,8 @@ public class CekNomorGenapGanjilForm extends javax.swing.JFrame {
                         .addGap(42, 42, 42)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                        .addComponent(jButton1)
-                        .addGap(129, 129, 129))))
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(70, 70, 70))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -99,8 +99,8 @@ public class CekNomorGenapGanjilForm extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 173, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
                 .addComponent(jLabelHasil)
                 .addGap(28, 28, 28))
         );
@@ -133,10 +133,13 @@ public class CekNomorGenapGanjilForm extends javax.swing.JFrame {
         // Logika untuk cek genap atau ganjil
         if (angka % 2 == 0) {
             jLabelHasil.setText("Angka " + angka + " adalah Genap");
+            JOptionPane.showMessageDialog(this, "Angka " + angka + " adalah Angka Genap.");
         } else {
             jLabelHasil.setText("Angka " + angka + " adalah Ganjil");
+            JOptionPane.showMessageDialog(this, "Angka " + angka + " adalah Angka Ganjil.");
         }
         
+        //Logika untuk cek bilangan prima atau bukan
         if (isPrima(angka)) {
                 JOptionPane.showMessageDialog(this, "Angka " + angka + " adalah bilangan prima.");
             } else {
